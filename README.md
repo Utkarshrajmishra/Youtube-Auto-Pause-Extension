@@ -23,7 +23,7 @@ Automatically play and pause YouTube videos based on tab and window activity.
 
 5. The extension should now be installed and visible in your Chrome toolbar.
 
-##Usage
+## Usage
 
 1. Click on the extension icon in the Chrome toolbar to enable or disable the auto play/pause feature.
 
