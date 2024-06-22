@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Auto Play/Pause",
+  "version": "1.0",
+  "description": "Automatically play and pause YouTube videos based on tab and window activity.",
+  "permissions": ["activeTab", "tabs", "scripting"],
+  "host_permissions": ["*://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.jpg",
+      "48": "icon48.jpg",
+      "128": "icon128.jpg"
+    }
+  },
+  "icons": {
+    "16": "icon16.jpg",
+    "48": "icon48.jpg",
+    "128": "icon128.jpg"
+  }
+}
